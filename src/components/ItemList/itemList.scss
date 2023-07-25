@@ -1,0 +1,20 @@
+.item-list{
+  margin: 0 24px;
+
+  .title {
+    color: #171725;
+    padding: 24px 0;
+  }
+  .items-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 24px;
+    -webkit-overflow-scrolling: touch;
+
+    > div {
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+    }
+  }
+}
